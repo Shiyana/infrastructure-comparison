@@ -36,6 +36,16 @@
     .section {
       margin-bottom: 40px;
     }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      font-size: 0.9em;
+      color: #555;
+      border-top: 1px solid #ccc;
+      padding-top: 10px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
@@ -57,77 +67,94 @@
       <tbody>
         <tr>
           <td>Definition</td>
-          <td>Legacy, on-prem IT systems</td>
-          <td>Centralized systems supporting enterprise operations</td>
-          <td>High-performance systems built for AI/ML tasks</td>
-        </tr>
-        <tr>
-          <td>Primary Use</td>
-          <td>File sharing, email, local storage</td>
-          <td>ERP, CRM, business applications</td>
-          <td>Model training, inference, automation</td>
+          <td>Legacy on-prem IT</td>
+          <td>Digitized core operations</td>
+          <td>AI/ML-centric, high performance</td>
         </tr>
         <tr>
           <td>Compute</td>
-          <td>Basic CPUs</td>
-          <td>Multi-core, virtualized CPUs</td>
-          <td>GPUs, TPUs, parallel compute</td>
+          <td>CPUs</td>
+          <td>Virtualized CPUs, cloud VMs</td>
+          <td>GPUs, TPUs, custom accelerators</td>
         </tr>
         <tr>
           <td>Storage</td>
-          <td>HDD, NAS</td>
-          <td>SAN/NAS, cloud backup</td>
-          <td>NVMe SSDs, object storage</td>
+          <td>HDDs, NAS</td>
+          <td>SAN/NAS, cloud, backups</td>
+          <td>SSD, NVMe, object storage</td>
         </tr>
         <tr>
           <td>Networking</td>
-          <td>LAN, basic firewalls</td>
+          <td>LAN</td>
           <td>Redundant, load-balanced</td>
-          <td>Low-latency, 100GbE, InfiniBand</td>
+          <td>100GbE, Infiniband, NVLink</td>
         </tr>
         <tr>
-          <td>Scalability</td>
-          <td>Manual upgrades, limited</td>
-          <td>Cloud-enabled, hybrid scalability</td>
-          <td>Elastic clusters, containers</td>
+          <td>Power & Cooling</td>
+          <td>Standard UPS, HVAC</td>
+          <td>Dual power feeds, CRAC cooling</td>
+          <td>High-density liquid cooling, 30–60kW racks</td>
         </tr>
         <tr>
-          <td>Software Stack</td>
-          <td>OS, DB, local tools</td>
-          <td>Enterprise apps (SAP, Oracle)</td>
-          <td>AI/ML frameworks (TensorFlow, PyTorch)</td>
+          <td>Cost Estimate</td>
+          <td>Low CAPEX, stable OPEX</td>
+          <td>Medium-high, depending on services</td>
+          <td>High initial cost, variable GPU usage cost</td>
+        </tr>
+        <tr>
+          <td>Energy Consumption</td>
+          <td>~2–5 kW/rack</td>
+          <td>~8–15 kW/rack</td>
+          <td>~25–60+ kW/rack (AI pods)</td>
         </tr>
         <tr>
           <td>Security</td>
-          <td>Basic antivirus/firewall</td>
-          <td>IAM, compliance (HIPAA, GDPR)</td>
-          <td>Model integrity, data privacy, zero-trust</td>
+          <td>Antivirus, firewall</td>
+          <td>IAM, encryption, auditing</td>
+          <td>Secure enclaves, data lineage, AI audit logs</td>
+        </tr>
+        <tr>
+          <td>Deployment</td>
+          <td>Fully on-prem</td>
+          <td>Hybrid (on-prem + cloud)</td>
+          <td>Hybrid/Multi-cloud, edge AI integration</td>
         </tr>
       </tbody>
     </table>
   </div>
 
   <div class="section">
-    <h2>🚀 Emerging Technologies</h2>
+    <h2>🧪 Technologies by Infrastructure Type</h2>
     <ul>
-      <li><strong>Traditional:</strong> Local servers, legacy virtualization (VMware), LAN</li>
-      <li><strong>Enterprise:</strong> Hybrid cloud (AWS Outposts, Azure Stack), SD-WAN, RPA, AIOps</li>
-      <li><strong>AI:</strong> GPUs/TPUs (NVIDIA A100, Google TPU), LLMOps, liquid cooling, NVLink</li>
+      <li><strong>Traditional:</strong> VMware, Hyper-V, LAN, bare-metal servers</li>
+      <li><strong>Enterprise:</strong> Azure Stack, AWS Outposts, Red Hat, SAP, Oracle, ServiceNow</li>
+      <li><strong>AI:</strong> NVIDIA DGX, Google TPUs, LLMOps, Kubeflow, MLFlow, Apache Airflow, Vector Databases (Pinecone, Weaviate)</li>
     </ul>
   </div>
 
   <div class="section">
-    <h2>📌 Summary</h2>
+    <h2>⚡ Power & Cost Considerations</h2>
     <ul>
-      <li><strong>Traditional:</strong> Legacy, non-digital organizations</li>
-      <li><strong>Enterprise:</strong> Core digital operations</li>
-      <li><strong>AI:</strong> High-performance compute for intelligent innovation</li>
+      <li><strong>Traditional Infra:</strong> ~2–5 kW/rack, $10K–$30K annual OPEX</li>
+      <li><strong>Enterprise Infra:</strong> ~8–15 kW/rack, costs depend on licensing and scaling strategy</li>
+      <li><strong>AI Infra:</strong> GPU clusters require 30–60kW+ per rack, high cooling demand, cost can exceed $100K/year per GPU pod</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🌟 Modern AI Trends</h2>
+    <ul>
+      <li>🔗 AI model orchestration: <strong>Kubeflow</strong>, <strong>LLMOps</strong></li>
+      <li>📦 AI platform stacks: <strong>NVIDIA AI Enterprise</strong>, <strong>Hugging Face Inference API</strong></li>
+      <li>🌊 Cooling innovations: <strong>Liquid immersion</strong>, <strong>rear-door heat exchangers</strong></li>
+      <li>🧠 Specialized silicon: <strong>Graphcore IPU</strong>, <strong>GroqChip</strong>, <strong>Cerebras Wafer Scale</strong></li>
+      <li>🧩 Modular AI platforms: support for MLOps, explainability, AI observability</li>
     </ul>
   </div>
 
   <footer>
-    <hr />
     <p><em>Created by Shiyana Jayanesan Shylaja — 2025</em></p>
+    <p><a href="https://github.com/Shiyana/infrastructure-comparison">View on GitHub</a></p>
   </footer>
 
 </body>
